@@ -9,13 +9,13 @@ public class Task1 {
         boolean work = true;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        while(work){
+        while (work) {
             System.out.print("Введите дробное число: ");
-            try{
+            try {
                 float fNumber = Float.parseFloat(reader.readLine());
                 System.out.printf("Введенное число равно %f\n", fNumber);
                 work = false;
-            } catch (IOException|NumberFormatException e) {
+            } catch (IOException | NumberFormatException e) {
                 System.out.println("Неверный ввод. Введите дробное число!!!");
             }
 
